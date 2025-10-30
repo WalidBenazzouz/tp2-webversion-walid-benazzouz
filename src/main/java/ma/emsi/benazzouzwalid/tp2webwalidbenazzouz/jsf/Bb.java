@@ -157,5 +157,4 @@ public class Bb implements Serializable {
         this.debug = !this.debug;
         return null; // rester sur la même page
     }
-
 }

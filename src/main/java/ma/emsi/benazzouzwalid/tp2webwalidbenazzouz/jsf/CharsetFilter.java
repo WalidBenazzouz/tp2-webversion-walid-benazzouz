@@ -25,7 +25,7 @@ public class CharsetFilter implements Filter {
      */
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
+             throws IOException, ServletException {
 
         // S’assurer que le corps des requêtes est lu en UTF-8
         request.setCharacterEncoding("UTF-8");
@@ -37,4 +37,5 @@ public class CharsetFilter implements Filter {
         // Continuer la chaîne de filtres
         chain.doFilter(request, response);
     }
+
 }
